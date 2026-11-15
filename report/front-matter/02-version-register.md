@@ -17,3 +17,4 @@
 | 2.8 | 05/10/2026 | Maria Jose Pezo Castilla | Actualización del Impact Mapping y revisión de la trazabilidad entre Business Goals, User Personas, Impacts, Deliverables y User Stories. |
 | 2.9 | 05/10/2026 | Maria Jose Pezo Castilla | Revisión y mejora del Product Backlog, verificando la priorización de User Stories, descripciones, Story Points y coherencia con los requisitos especificados en el Capítulo III. |
 | 2.10 | 05/10/2026 | Gabriel Peñaranda | Reestructuración de artefactos C4, correcciones mayores de redacción en los capítulos 1, 4 y 5, y consolidación del Student Outcome para el hito TB1. |
+| 3.0 | 15/11/2026 | Gabriel Peñaranda | Incorporación del Sprint 3 en el Capítulo 5: Web Services en Java con Domain-Driven Design, integración de la Web Application, documentación OpenAPI y despliegue en AWS. Estructura de las secciones 5.3 Validation Interviews y 5.4 Video About-the-Product. |
