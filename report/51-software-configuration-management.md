@@ -62,8 +62,8 @@ A continuación se presentan los productos de software que utiliza el equipo, ag
 | Swagger UI (OpenAPI Specification) | Documentación y prueba manual de los endpoints de la RESTful API, integrada en Spring Boot mediante springdoc-openapi. | Librería | [https://swagger.io/tools/swagger-ui/](https://swagger.io/tools/swagger-ui/) |
 | Chrome DevTools | Pruebas de responsive design (Desktop 1280 px / Mobile 390 px), revisión de atributos ARIA y depuración de llamadas HTTP. | Desktop | [https://developer.chrome.com/docs/devtools](https://developer.chrome.com/docs/devtools) |
 | Lighthouse | Auditoría de accesibilidad, rendimiento y SEO del Landing Page y la Web Application. | Desktop | [https://developer.chrome.com/docs/lighthouse](https://developer.chrome.com/docs/lighthouse) |
-| Jasmine + Karma | Pruebas unitarias de la Frontend Web Application (por ejemplo, `route-matching.service.spec.ts`). | Librería | [https://angular.dev/guide/testing](https://angular.dev/guide/testing) |
-| JUnit 5 | Pruebas unitarias y de integración de la RESTful API en Spring Boot. | Librería | [https://junit.org/junit5/](https://junit.org/junit5/) |
+| Jasmine + Karma | Pruebas unitarias de la Frontend Web Application: 94 pruebas en 18 archivos `*.spec.ts`. | Librería | [https://angular.dev/guide/testing](https://angular.dev/guide/testing) |
+| JUnit 5 | Pruebas de los Web Services en Spring Boot (`./mvnw test`). En el Sprint 4 se amplían con pruebas unitarias y de integración. | Librería | [https://junit.org/junit5/](https://junit.org/junit5/) |
 
 #### Software Deployment
 
@@ -71,13 +71,13 @@ A continuación se presentan los productos de software que utiliza el equipo, ag
 | :--- | :--- | :--- | :--- |
 | AWS Amplify Hosting | Publicación continua del Landing Page y de la Frontend Web Application a partir de la rama `main` de cada repositorio. | SaaS (Cloud) | [https://aws.amazon.com/amplify/hosting/](https://aws.amazon.com/amplify/hosting/) |
 | EC2 | Publicación temporal del Fake API (json-server) consumido por la primera versión de la Web Application. | SaaS (Cloud) | [https://aws.amazon.com/ec2/](https://aws.amazon.com/ec2/) |
-| AWS EC2 · AWS RDS for MySQL | Infraestructura planificada para la RESTful API y su base de datos a partir del Sprint 3. | SaaS (Cloud) | [https://aws.amazon.com](https://aws.amazon.com) |
+| Plataforma de los Web Services | Publicación de la RESTful API y de su base de datos MySQL. La plataforma definitiva se registra en la sección 5.1.4 cuando se confirme el despliegue. | SaaS (Cloud) | Por confirmar |
 
 #### Software Documentation
 
 | Producto | Propósito en el proyecto | Tipo | Ruta |
 | :--- | :--- | :--- | :--- |
-| GitHub (Trazza-report) | Redacción y control de versiones del Project Report en Markdown. | SaaS | [https://github.com/NexusLibre-1ASI0729-2620-16692/Trazza-report](https://github.com/NexusLibre-1ASI0729-2620-16692/Trazza-report) |
+| GitHub (trazza-report) | Redacción y control de versiones del Project Report en Markdown. | SaaS | [https://github.com/NexusLibre-1ASI0729-2620-16692/trazza-report](https://github.com/NexusLibre-1ASI0729-2620-16692/trazza-report) |
 | Microsoft Stream | Publicación de los videos de exposición, entrevistas y navegación por Sprint. | SaaS | [https://www.microsoft.com/microsoft-365/microsoft-stream](https://www.microsoft.com/microsoft-365/microsoft-stream) |
 | OpenAPI (Swagger) | Documentación de los Web Services desde el propio proyecto Spring Boot mediante springdoc-openapi. | Especificación | [https://swagger.io/specification/](https://swagger.io/specification/) |
 
@@ -87,10 +87,10 @@ El equipo utiliza GitHub como plataforma y sistema de control de versiones. Todo
 
 | Producto | Repositorio | Contenido |
 | :--- | :--- | :--- |
-| Project Report | [https://github.com/NexusLibre-1ASI0729-2620-16692/Trazza-report](https://github.com/NexusLibre-1ASI0729-2620-16692/Trazza-report) | Informe en Markdown, imágenes y diagramas como código (`.puml`). |
-| Landing Page | [https://github.com/NexusLibre-1ASI0729-2620-16692/Trazza-landingPage](https://github.com/NexusLibre-1ASI0729-2620-16692/Trazza-landingPage) | Sitio estático en HTML5, CSS3 y JavaScript con i18n (EN / ES). |
-| Frontend Web Application | [https://github.com/NexusLibre-1ASI0729-2620-16692/Trazza-webApp](https://github.com/NexusLibre-1ASI0729-2620-16692/Trazza-webApp) | Aplicación Angular + Angular Material organizada por bounded context (`iam`, `matchmaking`, `execution`, `billing`, `reputation` y `shared`) y Fake API en `server/db.json`. |
-| Web Services (RESTful API) | [https://github.com/NexusLibre-1ASI0729-2620-16692/Trazza-WebAPI](https://github.com/NexusLibre-1ASI0729-2620-16692/Trazza-WebAPI) | Proyecto Spring Boot + Spring Data JPA y sus pruebas unitarias y de integración/aceptación. |
+| Project Report | [https://github.com/NexusLibre-1ASI0729-2620-16692/trazza-report](https://github.com/NexusLibre-1ASI0729-2620-16692/trazza-report) | Informe en Markdown, imágenes y diagramas como código (`.puml`). Rama por defecto: `develop`. |
+| Landing Page | [https://github.com/NexusLibre-1ASI0729-2620-16692/trazza-website](https://github.com/NexusLibre-1ASI0729-2620-16692/trazza-website) | Sitio estático en HTML5, CSS3 y JavaScript con i18n (EN / ES). Rama por defecto: `develop`. |
+| Frontend Web Application | [https://github.com/NexusLibre-1ASI0729-2620-16692/trazza-webapp](https://github.com/NexusLibre-1ASI0729-2620-16692/trazza-webapp) | Aplicación Angular + Angular Material organizada por bounded context (`iam`, `matchmaking`, `execution`, `billing`, `reputation` y `shared`), pruebas unitarias con Jasmine y Karma y Fake API en `server/db.json`. Rama por defecto: `develop`. |
+| Web Services (RESTful API) | [https://github.com/NexusLibre-1ASI0729-2620-16692/trazza-webservice](https://github.com/NexusLibre-1ASI0729-2620-16692/trazza-webservice) | Proyecto Spring Boot 4.1.2 con Java 21, Spring Data JPA y MySQL, organizado por bounded context, y sus pruebas. Rama por defecto: `main`; el trabajo se integra en `develop`. |
 
 #### GitFlow Workflow
 
@@ -107,11 +107,13 @@ El equipo aplica el modelo de ramificación GitFlow propuesto por Vincent Driess
 
 | Tipo | Se crea desde | Se integra en | Convención de nombre | Ejemplos |
 | :--- | :--- | :--- | :--- | :--- |
-| Feature | `develop` | `develop` | `feature/<nombre-del-aspecto>` en kebab-case e inglés: el bounded context en la Web Application o la sección en el Landing Page. | `feature/matchmaking-routing`, `feature/loyalty-reputation`, `feature/hero-section` |
-| Release | `develop` | `main` y `develop` | `release/v<MAJOR>.<MINOR>.<PATCH>` | `release/v1.1.0`, `release/v0.1.0` |
-| Hotfix | `main` | `main` y `develop` | `hotfix/v<MAJOR>.<MINOR>.<PATCH>-<short-description>` | `hotfix/v1.1.1-mobile-menu-overflow` |
+| Feature | `develop` | `develop` | `feature/<nombre-del-aspecto>` en kebab-case e inglés: el bounded context en la Web Application o la sección en el Landing Page. | `feature/matchmaking-routing`, `feature/loyalty-reputation`, `feature/service-execution-monitoring`, `feature/hero-section` |
+| Release | `develop` | `main` y `develop` | `release/v<MAJOR>.<MINOR>.<PATCH>` | `release/v1.1.0` (trazza-website), `release/3.0` (trazza-report) |
+| Hotfix | `main` | `main` y `develop` | `hotfix/v<MAJOR>.<MINOR>.<PATCH>-<short-description>` | `hotfix/1.0.1` (trazza-webservice) |
 
 En el repositorio del informe se aplica la misma estrategia: cada sección del informe se trabaja en una rama `feature/<número-de-sección>-<nombre>` (por ejemplo `feature/44-web-applications-ux-ui-design` o `feature/51-software-configuration-management`) y se integra a `develop` mediante Pull Request.
+
+Todos los cambios se integran en `develop` mediante Pull Requests que se fusionan con un merge commit; `main` solo recibe los releases. Los commits de cada Pull Request quedan visibles en el historial de `develop`, que es la rama por defecto de `trazza-report`, `trazza-website` y `trazza-webapp`.
 
 #### Semantic Versioning
 
@@ -121,14 +123,17 @@ Los releases de cada producto se nombran con Semantic Versioning 2.0.0 (`MAJOR.M
 * **MINOR**: nuevas funcionalidades compatibles con la versión anterior.
 * **PATCH**: corrección de errores que no altera la funcionalidad.
 
-Mientras la Web Application y la RESTful API estén en desarrollo inicial se usa la serie `0.y.z`; la versión `1.0.0` se reserva para el primer release completo con los Web Services integrados.
+La versión `1.0.0` de cada producto marca su primer release completo. La siguiente tabla lista los releases etiquetados en cada repositorio; los releases del Sprint 4 se agregan al cerrar el Sprint.
 
-| Producto | Versión | Entrega | Alcance |
-| :--- | :--- | :--- | :--- |
-| Landing Page | `v1.0.0` | AV1 – Sprint 1 | Primera versión del Landing Page desplegada en AWS Amplify. |
-| Landing Page | `v1.1.0` | TB1 – Sprint 2 | Inglés como idioma por defecto, selector EN / ES funcional, rediseño según el mock-up actualizado y fotografías reales en las secciones para transportistas y comerciantes. |
-| Frontend Web Application | `v0.1.0` | TB1 – Sprint 2 | Primera versión desplegada: Sign up / Sign in, dashboards por rol, rutas de retorno, solicitudes de flete, vehículos e historial de envíos sobre el Fake API. |
-| RESTful API | `v0.1.0` | AV2 – Sprint 3 | Primera versión de los Web Services documentados con OpenAPI. |
+| Producto | Versión | Fecha | Sprint | Alcance |
+| :--- | :--- | :--- | :--- | :--- |
+| Landing Page | `v1.0.0` | 2026-10-08 | Sprint 2 | Nueva versión del Landing Page en inglés y español, con los accesos de registro y de inicio de sesión que llevan a la Web Application. |
+| Frontend Web Application | `v1.0.0` (CHANGELOG) | 2026-10-06 | Sprint 2 | Migración a Angular con arquitectura DDD por bounded context y Fake API. |
+| Frontend Web Application | `v1.1.0` | 2026-10-08 | Sprint 2 | Primera versión desplegada de la Web Application sobre el Fake API. |
+| Frontend Web Application | `v1.2.0` | 2026-11-14 | Sprint 3 | Integración con los Web Services (Spring Boot) en lugar del Fake API. |
+| Web Services (RESTful API) | `v1.0.0` | 2026-11-14 | Sprint 3 | Primer release de los Web Services documentados con OpenAPI. |
+| Web Services (RESTful API) | `v1.0.1` | 2026-11-14 | Sprint 3 | Hotfix del primer release. |
+| Project Report | `v3.0` | 2026-11-15 | Sprint 3 | Versión entregada en AV2. |
 
 #### Conventional Commits
 
@@ -152,12 +157,15 @@ Los mensajes de commit siguen la especificación Conventional Commits 1.0.0, con
 | `test` | Creación o modificación de pruebas. |
 | `chore` | Configuración, dependencias o tareas de mantenimiento. |
 
+En la práctica el equipo escribe los commits solo con la línea de asunto: 617 de los 624 commits sin merge de los cuatro repositorios no tienen cuerpo.
+
 Ejemplos tomados del historial del proyecto:
 
-* `feat(matchmaking): add route-matching domain service` (Trazza-webApp)
-* `test(matchmaking): add route-matching service unit tests` (Trazza-webApp)
-* `feat(i18n): add language engine and base translations` (Trazza-landingPage)
-* `style(header): add responsive navigation styles` (Trazza-landingPage)
+* `test(execution): add trip list spec` (trazza-webapp)
+* `feat(execution): validate active shipment actions` (trazza-webapp)
+* `feat(config): add datasource and jpa settings` (trazza-webservice)
+* `feat(hero): add call-to-action buttons and trust chips` (trazza-website)
+* `docs(chapter 5): update software configuration management` (trazza-report)
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
@@ -219,27 +227,26 @@ Referencia: [Gherkin Conventions for Readable Specifications](https://specflow.o
 
 ### 5.1.4. Software Deployment Configuration
 
-La solución Trazza se compone de tres productos que se despliegan de forma independiente. La siguiente tabla resume la configuración vigente al Sprint 2.
+La solución Trazza se compone de tres productos que se despliegan de forma independiente. La siguiente tabla resume la configuración al 2026-11-26.
 
-| Producto | Repositorio / rama | Tecnología | Servicio de despliegue | URL pública |
-| :--- | :--- | :--- | :--- | :--- |
-| Landing Page | `Trazza-landingPage` / `main` | HTML5, CSS3, JavaScript | AWS Amplify Hosting | [https://main.dop9j8vefsnfj.amplifyapp.com](https://main.dop9j8vefsnfj.amplifyapp.com) |
-| Frontend Web Application | `Trazza-webApp` / `main` | Angular, Angular Material, TypeScript, ngx-translate | AWS Amplify Hosting | [https://main.d11tospvoprjej.amplifyapp.com](https://main.d11tospvoprjej.amplifyapp.com) |
-| Fake API (temporal) | `Trazza-webApp` / `main` (carpeta `server`) | json-server | AWS EC2 | [https://trazza-api2.duckdns.org/api/v1/users](https://trazza-api2.duckdns.org/api/v1/users) |
-| RESTful API (Sprint 3) | `Trazza-WebAPI` / `main` | Spring Boot, Java, Spring Data JPA | AWS EC2 | Pendiente |
-| Base de datos (Sprint 3) | — | MySQL | AWS RDS for MySQL | Pendiente |
+| Producto | Repositorio / rama | Tecnología | Servicio de despliegue | URL publicada | Estado al 2026-11-26 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Landing Page | `trazza-website` / `main` | HTML5, CSS3, JavaScript | AWS Amplify Hosting | [https://main.dop9j8vefsnfj.amplifyapp.com](https://main.dop9j8vefsnfj.amplifyapp.com) | El dominio no resuelve en DNS; se vuelve a publicar en el Sprint 4 (TS07) |
+| Frontend Web Application | `trazza-webapp` / `main` | Angular, Angular Material, TypeScript, ngx-translate | AWS Amplify Hosting | [https://main.d11tospvoprjej.amplifyapp.com](https://main.d11tospvoprjej.amplifyapp.com) | El dominio no resuelve en DNS; se vuelve a publicar en el Sprint 4 (TS07) |
+| Fake API (usado en el Sprint 2) | `trazza-webapp` / carpeta `server` | json-server | AWS EC2 | [https://trazza-api2.duckdns.org/api/v1](https://trazza-api2.duckdns.org/api/v1) | No responde; reemplazado por los Web Services |
+| Web Services (RESTful API) | `trazza-webservice` / `main` | Spring Boot 4.1.2, Java 21, Spring Data JPA, MySQL | Por confirmar | Pendiente | Pendiente de confirmar (TS07) |
 
 #### Landing Page (AWS Amplify Hosting)
 
 1. Ingresar a la consola de AWS Amplify y seleccionar **Create new app → GitHub**.
-2. Autorizar a AWS Amplify en la organización `NexusLibre-1ASI0729-2620-16692` y seleccionar el repositorio `Trazza-landingPage` y la rama `main`.
+2. Autorizar a AWS Amplify en la organización `NexusLibre-1ASI0729-2620-16692` y seleccionar el repositorio `trazza-website` y la rama `main`.
 3. Al ser un sitio estático, no se configura comando de build y el directorio de salida es la raíz del repositorio (`/`).
 4. Guardar y desplegar. Amplify publica el sitio en un dominio `*.amplifyapp.com` con HTTPS.
 5. Cada merge en `main` dispara automáticamente un nuevo despliegue (despliegue continuo).
 
 #### Frontend Web Application (AWS Amplify Hosting)
 
-1. En AWS Amplify, crear una nueva app conectada al repositorio `Trazza-webApp`, rama `main`.
+1. En AWS Amplify, crear una nueva app conectada al repositorio `trazza-webapp`, rama `main`.
 2. Configurar el build en `amplify.yml`:
 
 ```yaml
@@ -261,7 +268,7 @@ frontend:
       - node_modules/**/*
 ```
 
-3. Configurar en `src/environments/environment.ts` la propiedad `platformProviderApiBaseUrl` con la URL pública del Fake API (en el Sprint 3 se reemplazará por la URL de la RESTful API).
+3. Configurar en `src/environments/environment.prod.ts` la propiedad `platformProviderApiBaseUrl` con la URL base pública de los Web Services, terminada en `/api/v1`. En desarrollo, `src/environments/environment.ts` apunta a `http://localhost:8080/api/v1`.
 4. Agregar la regla Rewrites and redirects para que Angular Router funcione al recargar cualquier ruta:
 
 | Source address | Target address | Type |
@@ -270,16 +277,30 @@ frontend:
 
 5. Guardar y desplegar. Cada merge en `main` genera un nuevo build y despliegue.
 
-#### Fake API (AWS EC2)
+#### Fake API (AWS EC2, usado en el Sprint 2)
 
-1. Aprovisionar una instancia AWS EC2 con Node.js y clonar el repositorio `Trazza-webApp`.
-2. Desde la carpeta `server`, ejecutar `json-server --watch db.json --routes routes.json` (script `start.sh`) en el puerto `3000`. El archivo `routes.json` agrega el prefijo `/api/v1`.
-3. Configurar Nginx como proxy inverso hacia el puerto `3000` y asociar el dominio `trazza-api2.duckdns.org` a la IP pública de la instancia, con certificado HTTPS para que la Web Application desplegada en Amplify pueda consumir el API sin contenido mixto.
-4. Registrar la URL `https://trazza-api2.duckdns.org/api/v1` en la propiedad `platformProviderApiBaseUrl` de `src/environments/environment.ts`.
+1. Aprovisionar una instancia AWS EC2 con Node.js y clonar el repositorio `trazza-webapp`.
+2. Desde la carpeta `server`, ejecutar `json-server --watch db.json --routes routes.json` en el puerto `3000`. El archivo `routes.json` agrega el prefijo `/api/v1`.
+3. Configurar Nginx como proxy inverso hacia el puerto `3000` y asociar un dominio con certificado HTTPS para que la Web Application desplegada en Amplify pueda consumir el API sin contenido mixto.
 
-#### RESTful API y base de datos (planificado para el Sprint 3)
+Desde el Sprint 3 la Web Application usa los Web Services y este Fake API ya no se utiliza.
 
-1. Aprovisionar una instancia de AWS RDS for MySQL y restringir su Security Group para aceptar conexiones solo desde la instancia EC2 de la API.
-2. Empaquetar el proyecto Spring Boot con `./mvnw clean package` y ejecutar el `.jar` generado (`java -jar target/*.jar`) en una instancia AWS EC2 detrás de Nginx como proxy inverso.
-3. Configurar como variables de entorno `SPRING_PROFILES_ACTIVE=prod`, la conexión a MySQL (`SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME` y `SPRING_DATASOURCE_PASSWORD`) y la clave para la generación de tokens JWT, sin exponer credenciales en el repositorio.
-4. Habilitar Swagger UI (springdoc-openapi) en `/swagger-ui/index.html` como evidencia de la documentación OpenAPI.
+#### Web Services y base de datos
+
+1. Contar con una base de datos MySQL cuyo esquema ya exista: la configuración de JPA usa `ddl-auto: none`, por lo que la aplicación no crea las tablas.
+2. Empaquetar el proyecto con `./mvnw clean package` y ejecutar el `.jar` generado (`java -jar target/*.jar`) en la plataforma elegida. En local se levanta con `./mvnw spring-boot:run`.
+3. Configurar las siguientes variables de entorno, sin exponer credenciales en el repositorio:
+
+| Variable | Propósito | Valor por defecto |
+| :--- | :--- | :--- |
+| `PORT` | Puerto HTTP de la aplicación. | `8080` |
+| `DB_URL` | URL JDBC de la base de datos MySQL. | `jdbc:mysql://localhost:3306/trazza_database?...` |
+| `DB_USERNAME` | Usuario de la base de datos. | `root` |
+| `DB_PASSWORD` | Contraseña de la base de datos. | Sin valor por defecto |
+| `TOKEN_SECRET` | Clave de firma de los tokens JWT. | Sin valor por defecto |
+| `PERSONAL_DATA_ENCRYPTION_KEY` | Clave de cifrado de los datos personales. | Sin valor por defecto |
+| `PERSONAL_DATA_HASH_KEY` | Clave del hash de los datos personales. | Sin valor por defecto |
+| `CORS_ALLOWED_ORIGINS` | Orígenes permitidos por CORS. | `*` |
+
+4. La documentación OpenAPI queda disponible en `/swagger-ui.html` (Swagger UI) y en `/v3/api-docs` (documento JSON) mediante springdoc-openapi.
+5. La plataforma de despliegue y la URL pública de los Web Services se registrarán en esta sección y en la tabla anterior cuando se confirme el despliegue (Technical Story TS07).
