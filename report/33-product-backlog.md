@@ -39,6 +39,23 @@ La estimación de esfuerzo se ha realizado utilizando *Story Points* basados en 
 | 30 | **US18** | Registro de Ubicación GPS vía API (RESTful API) | Como Developer quiero un servicio que reciba y actualice constantemente las coordenadas GPS de un viaje en curso para alimentar el seguimiento en vivo. | 5 |
 | 31 | **US22** | Registro de Calificaciones vía API (RESTful API) | Como Developer quiero un servicio para registrar las calificaciones entre usuarios y recalcular el promedio general del perfil afectado. | 5 |
 
+### Technical Stories del Sprint 4
+
+Las 31 User Stories anteriores suman 147 Story Points y se implementaron en los Sprints 1 a 3. Para el Sprint 4, de cierre de la versión, el equipo agregó ocho Technical Stories que cubren la calidad, la validación con usuarios, los videos, el despliegue final y el informe, con la misma escala de Fibonacci.
+
+| Id | Título | Descripción | Story Points |
+| :--- | :--- | :--- | :---: |
+| TS01 | Pruebas unitarias de los Web Services | 8 | Como Developer quiero pruebas unitarias del dominio y de los servicios de aplicación de los cinco bounded contexts para detectar regresiones antes de cada release. |
+| TS02 | Pruebas de integración y aceptación de los Web Services | 8 | Como Developer quiero pruebas de integración de los controladores REST y escenarios de aceptación para verificar los contratos de la API. |
+| TS03 | Pruebas unitarias de la Web Application | 5 | Como Developer quiero pruebas unitarias por bounded context para proteger las reglas de dominio y las vistas de la aplicación. |
+| TS04 | Entrevistas de validación | 5 | Como equipo quiero entrevistar a transportistas y comerciantes MYPE sobre el Landing Page y la aplicación para validar la propuesta con usuarios reales. |
+| TS05 | Evaluación heurística y mejoras | 5 | Como equipo quiero evaluar la experiencia con las heurísticas de Nielsen y corregir los hallazgos para mejorar la usabilidad antes del release final. |
+| TS06 | Videos About-the-Product y About-the-Team | 5 | Como equipo quiero publicar los videos About-the-Product y About-the-Team para presentar el producto y el proceso de trabajo. |
+| TS07 | Despliegue final y release | 5 | Como equipo quiero desplegar la versión final del Landing Page, la Web Application y los Web Services con releases etiquetados para entregar los productos funcionando. |
+| TS08 | Informe final | 3 | Como equipo quiero completar los seis capítulos del informe con sus evidencias para la entrega TB2. |
+
+Las Technical Stories suman **44 Story Points** y el Product Backlog completo, **191 Story Points**.
+
 ![Product Backlog 1](../assets/images/chapter3/product-backlog-1.jpeg)
 ![Product Backlog 2](../assets/images/chapter3/product-backlog-2.jpeg)
 
